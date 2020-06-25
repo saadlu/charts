@@ -234,6 +234,8 @@ spec:
               name: oauth-client-secret
               key: WLP_CLIENT_REGISTRATION_SECRET
         {{- if eq .Values.platform "mcmp" }}
+        - name: MCMP_GATEWAY_URL
+          value: {{ .Values.mcmp.gatewayUrl }}
         - name: MCMP_SYSTEM_USER_ID
           valueFrom:
             secretKeyRef:

@@ -1,6 +1,31 @@
 apiVersion: v1
 entries:
   ibm-ace-dashboard-dev:
+  - appVersion: 11.0.0.9-r1
+    created: 2020-06-15T13:46:15.720307056Z
+    description: IBM App Connect Enterprise dashboard
+    digest: 121b8a73ebb583a04f1baa631d72a7b44e2ba91f9fe23230b5e8d30e6a272a10
+    icon: https://raw.githubusercontent.com/ot4i/ace-docker/master/app_connect_light_256x256.png
+    keywords:
+    - amd64
+    - ICPRHOCP
+    - ICPROKS
+    - ACE
+    - Integration
+    - IIB
+    - WMB
+    - MQSI
+    - Websphere
+    - Message
+    - Broker
+    - Bus
+    - Limited
+    kubeVersion: '>=1.11.0'
+    name: ibm-ace-dashboard-dev
+    tillerVersion: '>=2.10.0'
+    urls:
+    - https://raw.githubusercontent.com/IBM/charts/master/repo/stable/ibm-ace-dashboard-dev-3.1.3.tgz
+    version: 3.1.3
   - appVersion: 11.0.0.8-r1
     created: 2020-03-31T22:58:06.763472962Z
     description: IBM App Connect Enterprise dashboard
@@ -172,6 +197,32 @@ entries:
     - https://raw.githubusercontent.com/IBM/charts/master/repo/stable/ibm-ace-dashboard-dev-1.0.0.tgz
     version: 1.0.0
   ibm-ace-server-dev:
+  - appVersion: 11.0.0.9-r1
+    created: 2020-06-15T19:28:11.430663491Z
+    description: This helm chart is used by the IBM App Connect Dashboard to deploy
+      servers
+    digest: 6eb041d1921716f1d7adb8fbd503fb099aa449f045fd280f0ec76bbf62d72a9b
+    icon: https://raw.githubusercontent.com/ot4i/ace-helm/master/integration_server.svg?sanitize=true
+    keywords:
+    - amd64
+    - ICPRHOCP
+    - ICPROKS
+    - ACE
+    - Integration
+    - IIB
+    - WMB
+    - MQSI
+    - Websphere
+    - Message
+    - Broker
+    - Bus
+    - Limited
+    kubeVersion: '>=1.11.0'
+    name: ibm-ace-server-dev
+    tillerVersion: '>=2.10.0'
+    urls:
+    - https://raw.githubusercontent.com/IBM/charts/master/repo/stable/ibm-ace-server-dev-3.1.3.tgz
+    version: 3.1.3
   - appVersion: 11.0.0.8-r1
     created: 2020-03-31T22:58:06.787188639Z
     description: This helm chart is used by the IBM App Connect Dashboard to deploy
@@ -524,6 +575,31 @@ entries:
     version: 1.0.0
   ibm-cam:
   - apiVersion: v1
+    appVersion: 4.2.0.1
+    created: 2020-05-22T22:16:51.541643866Z
+    description: IBM Cloud Automation Manager
+    digest: 68a213c58403093dabe31222e16bd912eba2afb2eed7b5d27d941c547cbcdc8d
+    icon: https://raw.githubusercontent.com/IBM-CAMHub-Open/starterlibrary/master/images/IBM_CAM_h.png
+    keywords:
+    - amd64
+    - ppc64le
+    - Tools
+    - s390x
+    - Automation
+    - Limited
+    - Commercial
+    - ICP
+    - IcpClusterResource
+    - IBM-CAM-Pak
+    - ICPRHOS
+    - ICPRHOCP
+    kubeVersion: '>=1.10.0'
+    name: ibm-cam
+    tillerVersion: '>=2.9.1'
+    urls:
+    - https://raw.githubusercontent.com/IBM/charts/master/repo/stable/ibm-cam-4.2.1.tgz
+    version: 4.2.1
+  - apiVersion: v1
     appVersion: 4.2.0.0
     created: 2020-03-27T15:02:24.690402504Z
     description: IBM Cloud Automation Manager
@@ -843,6 +919,30 @@ entries:
     - https://raw.githubusercontent.com/IBM/charts/master/repo/stable/ibm-cam-1.3.0.tgz
     version: 1.3.0
   ibm-datapower-dev:
+  - apiVersion: v1
+    appVersion: 2018.4.1.11
+    created: 2020-05-26T16:12:33.432487888Z
+    description: IBM DataPower Gateway
+    digest: 90e7868d2fba926c11f30d40520bbeab2cbb99395f591d3a4ffe64641e3582ef
+    home: http://www-03.ibm.com/software/products/en/datapower-gateway
+    icon: https://avatars1.githubusercontent.com/u/8836442?v=4&s=200
+    keywords:
+    - DataPower
+    - Gateway
+    - API
+    - Security
+    - IDG
+    - amd64
+    - Limited
+    - ICP
+    kubeVersion: '>=1.13.0'
+    name: ibm-datapower-dev
+    sources:
+    - https://github.com/IBM/charts/tree/master/stable
+    tillerVersion: '>=2.7.3'
+    urls:
+    - https://raw.githubusercontent.com/IBM/charts/master/repo/stable/ibm-datapower-dev-3.1.0.tgz
+    version: 3.1.0
   - apiVersion: v1
     appVersion: 2018.4.1.10
     created: 2020-03-06T17:20:05.267703817Z
@@ -1217,278 +1317,6 @@ entries:
     name: ibm-datapower-dev
     urls:
     - https://raw.githubusercontent.com/IBM/charts/master/repo/stable/ibm-datapower-dev-0.1.0.tgz
-    version: 0.1.0
-  ibm-db2oltp-dev:
-  - apiVersion: v1
-    created: 2020-04-17T20:46:58.785754976Z
-    deprecated: true
-    description: IBM Db2 Developer-C Edition 11.1.4.4 - Deprecated
-    digest: 74bedc536d511ed1f3cd64a906a23fcca0064e3c9f2f0627d332342444eb942a
-    engine: gotpl
-    home: https://www.ibm.com/analytics/us/en/db2/
-    icon: https://raw.githubusercontent.com/IBM/charts/master/stable/ibm-db2oltp-dev/ibm_cloud_pak/pak_extensions/logo/db2logoicp-01.png
-    keywords:
-    - db2
-    - database
-    - IBM-Db2-Developer-Pak
-    - sql
-    - amd64
-    - ppc64le
-    - s390x
-    - Limited
-    - ICP
-    - IKS
-    kubeVersion: '>=1.8.3'
-    maintainers:
-    - name: IBM Analytics
-    name: ibm-db2oltp-dev
-    sources:
-    - https://github.com/IBM/charts/tree/master/stable
-    tillerVersion: '>=2.6.0'
-    urls:
-    - https://raw.githubusercontent.com/IBM/charts/master/repo/stable/ibm-db2oltp-dev-3.2.1.tgz
-    version: 3.2.1
-  - apiVersion: v1
-    created: 2018-12-06T21:52:21.710253818Z
-    description: IBM Db2 Developer-C Edition 11.1.4.4
-    digest: 3c81e714f589b76e308590eddded7fbce47e1494944a438fb0ec0837288819d7
-    engine: gotpl
-    home: https://www.ibm.com/analytics/us/en/db2/
-    icon: https://raw.githubusercontent.com/IBM/charts/master/stable/ibm-db2oltp-dev/ibm_cloud_pak/pak_extensions/logo/db2logoicp-01.png
-    keywords:
-    - db2
-    - database
-    - IBM-Db2-Developer-Pak
-    - sql
-    - amd64
-    - ppc64le
-    - s390x
-    - Limited
-    - ICP
-    - IKS
-    kubeVersion: '>=1.8.3'
-    maintainers:
-    - name: IBM Analytics
-    name: ibm-db2oltp-dev
-    sources:
-    - https://github.com/IBM/charts/tree/master/stable
-    tillerVersion: '>=2.6.0'
-    urls:
-    - https://raw.githubusercontent.com/IBM/charts/master/repo/stable/ibm-db2oltp-dev-3.2.0.tgz
-    version: 3.2.0
-  - apiVersion: v1
-    created: 2018-09-28T17:54:15.575318594Z
-    description: IBM Db2 Developer-C Edition 11.1.3.3
-    digest: 739cc2aaa37792b02fb11e9bea16e8a3b68247972ebe9133dffbd7b2977955d2
-    engine: gotpl
-    home: https://www.ibm.com/analytics/us/en/db2/
-    icon: https://raw.githubusercontent.com/IBM/charts/master/stable/ibm-db2oltp-dev/ibm_cloud_pak/pak_extensions/logo/db2logoicp-01.png
-    keywords:
-    - db2
-    - database
-    - IBM-Db2-Developer-Pak
-    - sql
-    - amd64
-    - ppc64le
-    - s390x
-    - Limited
-    - ICP
-    - IKS
-    maintainers:
-    - name: IBM Analytics
-    name: ibm-db2oltp-dev
-    sources:
-    - https://github.com/IBM/charts/tree/master/stable
-    tillerVersion: '>=2.6.0'
-    urls:
-    - https://raw.githubusercontent.com/IBM/charts/master/repo/stable/ibm-db2oltp-dev-3.1.0.tgz
-    version: 3.1.0
-  - apiVersion: v1
-    created: 2018-06-18T04:50:46.262805749Z
-    description: IBM Db2 Developer-C Edition 11.1.3.3
-    digest: d0e7ae6f36ca890663ff778ca288a565a72bd274f5c62c38551e0c2775e4454b
-    engine: gotpl
-    home: https://www.ibm.com/analytics/us/en/db2/
-    icon: https://raw.githubusercontent.com/IBM/charts/master/logo/db2logoicp-01.png
-    keywords:
-    - db2
-    - database
-    - sql
-    - amd64
-    - ppc64le
-    - s390x
-    - Limited
-    - ICP
-    - IKS
-    maintainers:
-    - name: IBM Analytics
-    name: ibm-db2oltp-dev
-    sources:
-    - https://github.com/IBM/charts/tree/master/stable
-    tillerVersion: '>=2.6.0'
-    urls:
-    - https://raw.githubusercontent.com/IBM/charts/master/repo/stable/ibm-db2oltp-dev-3.0.0.tgz
-    version: 3.0.0
-  - apiVersion: v1
-    created: 2018-03-17T01:04:50.517226026Z
-    description: IBM Db2 Developer-C Edition 11.1.3.3
-    digest: b8de818b1ac34c842c2a3c0ea8ba3be9a7e74a4dc54d1705140501de49b0081a
-    engine: gotpl
-    home: https://www.ibm.com/analytics/us/en/db2/
-    icon: https://raw.githubusercontent.com/IBM/charts/master/logo/db2logoicp-01.png
-    keywords:
-    - db2
-    - database
-    - sql
-    maintainers:
-    - name: IBM Analytics
-    name: ibm-db2oltp-dev
-    sources:
-    - https://github.com/IBM/charts/tree/master/stable
-    tillerVersion: '>=2.6.0'
-    urls:
-    - https://raw.githubusercontent.com/IBM/charts/master/repo/stable/ibm-db2oltp-dev-2.0.0.tgz
-    version: 2.0.0
-  - apiVersion: v1
-    created: 2018-03-06T04:30:17.465498122Z
-    description: IBM Db2 Developer-C Edition 11.1.2.2 iFix002
-    digest: e9fed9b870f3931857be080ab108abe843bfeaa1c1ef93cc80457b6ec0a32ea4
-    engine: gotpl
-    home: https://www.ibm.com/analytics/us/en/db2/
-    icon: https://raw.githubusercontent.com/IBM/charts/master/logo/db2logoicp-01.png
-    keywords:
-    - db2
-    - database
-    - sql
-    maintainers:
-    - name: IBM Analytics
-    name: ibm-db2oltp-dev
-    sources:
-    - https://github.com/IBM/charts/tree/master/stable
-    tillerVersion: '>=2.4.0'
-    urls:
-    - https://raw.githubusercontent.com/IBM/charts/master/repo/stable/ibm-db2oltp-dev-1.1.3.tgz
-    version: 1.1.3
-  - apiVersion: v1
-    created: 2018-02-23T05:35:58.390042554Z
-    deprecated: true
-    description: IBM Db2 Developer-C Edition 11.1.2.2 iFix002. This chart is now deprecated.
-    digest: cf0b837b7b624e408d4e4505c1ef3c8fa4496ec44eca9f01a4c48eaf5ac59340
-    engine: gotpl
-    home: https://www.ibm.com/analytics/us/en/db2/
-    icon: https://raw.githubusercontent.com/Dan23/db2logo/master/content/db2logoicp-01.png
-    keywords:
-    - db2
-    - database
-    - sql
-    maintainers:
-    - name: IBM Analytics
-    name: ibm-db2oltp-dev
-    sources:
-    - https://github.com/IBM/charts/tree/master/stable
-    tillerVersion: '>=2.4.0'
-    urls:
-    - https://raw.githubusercontent.com/IBM/charts/master/repo/stable/ibm-db2oltp-dev-1.1.2.tgz
-    version: 1.1.2
-  - apiVersion: v1
-    created: 2018-01-26T00:24:59.573850769Z
-    description: IBM Db2 Developer-C Edition 11.1.2.2 iFix002
-    digest: c5893980a172c9f7cdbb4c6ee622fe32ecf20fd9ea4f4cb1cb6462e24402dca1
-    engine: gotpl
-    home: https://www.ibm.com/analytics/us/en/db2/
-    icon: https://na.cumulusrepo.com/assetswithkey/ba5345023eb40c21d01ad81bc927a36f/db2logoicp-01.png/v1
-    keywords:
-    - db2
-    - database
-    - sql
-    maintainers:
-    - name: IBM Analytics
-    name: ibm-db2oltp-dev
-    sources:
-    - https://github.com/IBM/charts/tree/master/stable
-    tillerVersion: '>=2.4.0'
-    urls:
-    - https://raw.githubusercontent.com/IBM/charts/master/repo/stable/ibm-db2oltp-dev-1.1.1.tgz
-    version: 1.1.1
-  - apiVersion: v1
-    created: 2017-12-01T04:15:16.329239177Z
-    description: IBM Db2 Developer-C Edition 11.1.2.2
-    digest: ea88d17396672bb45b13f0fc30ed45b29185801468d402f833154e55137ce9f8
-    engine: gotpl
-    home: https://www.ibm.com/analytics/us/en/db2/
-    icon: https://na.cumulusrepo.com/assetswithkey/ba5345023eb40c21d01ad81bc927a36f/db2logoicp-01.png/v1
-    keywords:
-    - db2
-    - database
-    - sql
-    maintainers:
-    - name: IBM Analytics
-    name: ibm-db2oltp-dev
-    sources:
-    - https://github.com/IBM/charts/tree/master/stable
-    tillerVersion: '>=2.4.0'
-    urls:
-    - https://raw.githubusercontent.com/IBM/charts/master/repo/stable/ibm-db2oltp-dev-1.1.0.tgz
-    version: 1.1.0
-  - apiVersion: v1
-    created: 2017-10-24T18:37:36.684399239Z
-    description: IBM Db2 Developer-C Edition 11.1.2.2
-    digest: 69a69c1f7022bd5a2fbf1a390963cb836cb5eb447234695576a141ec76647fab
-    engine: gotpl
-    home: https://www.ibm.com/analytics/us/en/db2/
-    icon: https://na.cumulusrepo.com/assetswithkey/ba5345023eb40c21d01ad81bc927a36f/db2logoicp-01.png/v1
-    keywords:
-    - db2
-    - database
-    - sql
-    maintainers:
-    - name: IBM Analytics
-    name: ibm-db2oltp-dev
-    sources:
-    - https://github.com/IBM/charts/tree/master/stable
-    tillerVersion: '>=2.4.0'
-    urls:
-    - https://raw.githubusercontent.com/IBM/charts/master/repo/stable/ibm-db2oltp-dev-1.0.0.tgz
-    version: 1.0.0
-  - apiVersion: v1
-    created: 2017-10-24T18:37:36.676885949Z
-    description: IBM Db2 Developer-C Edition 11.1.2.2
-    digest: a44428b3aa3e34bb6e133e2fe9c239e01678aa103765c377fd5027de23fb68e3
-    engine: gotpl
-    home: https://www.ibm.com/analytics/us/en/db2/
-    icon: https://na.cumulusrepo.com/assetswithkey/ba5345023eb40c21d01ad81bc927a36f/db2logoicp-01.png/v1
-    keywords:
-    - db2
-    - database
-    - sql
-    maintainers:
-    - name: IBM Analytics
-    name: ibm-db2oltp-dev
-    sources:
-    - https://github.com/IBM/charts/tree/master/stable
-    tillerVersion: '>=2.4.0'
-    urls:
-    - https://raw.githubusercontent.com/IBM/charts/master/repo/stable/ibm-db2oltp-dev-0.1.1.tgz
-    version: 0.1.1
-  - apiVersion: v1
-    created: 2017-10-24T18:37:36.647061307Z
-    description: IBM Db2 Developer-C Edition 11.1.2.2
-    digest: 87a5c153a60472c258f87fab691a0de3a55406804db88031b567849f9ded8b50
-    engine: gotpl
-    home: https://www.ibm.com/analytics/us/en/db2/
-    icon: https://na.cumulusrepo.com/assetswithkey/ba5345023eb40c21d01ad81bc927a36f/db2logoicp-01.png/v1
-    keywords:
-    - db2
-    - database
-    - sql
-    maintainers:
-    - name: IBM Analytics
-    name: ibm-db2oltp-dev
-    sources:
-    - https://github.com/IBM/charts/tree/master/stable
-    tillerVersion: '>=2.4.0'
-    urls:
-    - https://raw.githubusercontent.com/IBM/charts/master/repo/stable/ibm-db2oltp-dev-0.1.0.tgz
     version: 0.1.0
   ibm-dsx-dev:
   - apiVersion: v1
@@ -3030,7 +2858,7 @@ entries:
   ibm-netcool-piagent-prometheus-dev:
   - apiVersion: v1Beta
     appVersion: 0.2.0
-    created: 2020-03-20T14:25:52.686747055Z
+    created: 2020-05-08T20:53:20.7436154Z
     deprecated: true
     description: Prometheus metrics agent for Predictive Insights - Deprecated
     digest: 7c7a4fa97dc9078fb639f1ad2c2b21b61828f625fd57ed9b03441f8c6e883093
@@ -3052,7 +2880,7 @@ entries:
     - https://raw.githubusercontent.com/IBM/charts/master/repo/stable/ibm-netcool-piagent-prometheus-dev-0.2.1.tgz
     version: 0.2.1
   - apiVersion: v1Beta
-    created: 2018-06-07T22:21:14.210544674Z
+    created: 2020-05-08T20:53:20.7371583Z
     description: Prometheus metrics agent for Predictive Insights
     digest: 2252b97855dcb1af695cc7b7d15d64677baeada75442da3de3979596198f3f3b
     keywords:
@@ -3167,100 +2995,28 @@ entries:
     urls:
     - https://raw.githubusercontent.com/IBM/charts/master/repo/stable/ibm-nodejs-loopback-1.0.0.tgz
     version: 1.0.0
-  ibm-nodejs-sample:
-  - appVersion: 2.0.1
-    created: 2020-04-01T10:00:18.570644932Z
-    deprecated: true
-    description: A self-describing Node.js sample application - Deprecated
-    digest: dc22b3ce39f50f4f3c6698a6f498b4cb65ad7255b31ce8bdef9da9325f0b78d3
-    icon: https://nodejs.org/static/images/logos/nodejs-new-pantone-black.png
-    keywords:
-    - OpenSource
-    - amd64
-    - ppc64le
-    - s390x
-    - ICP
-    - IKS
-    - runtime
-    kubeVersion: '>=1.9.1'
-    name: ibm-nodejs-sample
-    sources:
-    - https://github.com/ibm-developer/icp-nodejs-sample
-    tillerVersion: '>=2.6.0'
-    urls:
-    - https://raw.githubusercontent.com/IBM/charts/master/repo/stable/ibm-nodejs-sample-2.0.1.tgz
-    version: 2.0.1
-  - appVersion: 2.0.0
-    created: 2019-04-26T20:24:48.603634987Z
-    description: A self-describing Node.js sample application
-    digest: a511a27248010ce5e4bdc754058d1d016bee30d5553f07353a0be0671f3b29e2
-    icon: https://nodejs.org/static/images/logos/nodejs-new-pantone-black.png
-    keywords:
-    - OpenSource
-    - amd64
-    - ppc64le
-    - s390x
-    - ICP
-    - IKS
-    - runtime
-    kubeVersion: '>=1.9.1'
-    name: ibm-nodejs-sample
-    sources:
-    - https://github.com/ibm-developer/icp-nodejs-sample
-    tillerVersion: '>=2.6.0'
-    urls:
-    - https://raw.githubusercontent.com/IBM/charts/master/repo/stable/ibm-nodejs-sample-2.0.0.tgz
-    version: 2.0.0
-  - created: 2018-12-11T13:14:59.444456426Z
-    description: A self-describing Node.js sample application
-    digest: 94a8772ce6dd9a4b3f4d7a1431c7d4269ed7c8686823eade940751b0fd7180d3
-    icon: https://nodejs.org/static/images/logos/nodejs-new-pantone-black.png
-    keywords:
-    - OpenSource
-    - amd64
-    - ppc64le
-    - s390x
-    - ICP
-    - IKS
-    - runtime
-    kubeVersion: '>=1.9.1'
-    name: ibm-nodejs-sample
-    sources:
-    - https://github.com/ibm-developer/icp-nodejs-sample
-    tillerVersion: '>=2.6.0'
-    urls:
-    - https://raw.githubusercontent.com/IBM/charts/master/repo/stable/ibm-nodejs-sample-1.2.1.tgz
-    version: 1.2.1
-  - apiVersion: v1
-    created: 2018-02-14T22:02:56.076857719Z
-    description: A self-describing Node.js sample application
-    digest: ed164654b87210c28aeea5ca19c924119969ed33827759d1e96d34e5a7f5af8b
-    icon: https://nodejs.org/static/images/logos/nodejs-new-pantone-black.png
-    name: ibm-nodejs-sample
-    tillerVersion: '>=2.4.0'
-    urls:
-    - https://raw.githubusercontent.com/IBM/charts/master/repo/stable/ibm-nodejs-sample-1.2.0.tgz
-    version: 1.2.0
-  - apiVersion: v1
-    created: 2017-12-15T21:33:06.898697635Z
-    description: A self-describing Node.js sample application
-    digest: 3c8d409cd4ab126d245d795545bb8f2fe6f129e7cff398e8f777054b7ca45514
-    icon: https://nodejs.org/static/images/logos/nodejs-new-pantone-black.png
-    name: ibm-nodejs-sample
-    tillerVersion: '>=2.4.0'
-    urls:
-    - https://raw.githubusercontent.com/IBM/charts/master/repo/stable/ibm-nodejs-sample-1.1.0.tgz
-    version: 1.1.0
-  - apiVersion: v1
-    created: 2017-10-25T12:42:53.933881368Z
-    description: A self-describing Node.js sample application
-    digest: 2fc3926f05f2cc03697110a2cc131ddaa81f221b2b9f7d8c8fe19b3969522bdd
-    icon: nodejs-logo.png
-    name: ibm-nodejs-sample
-    urls:
-    - https://raw.githubusercontent.com/IBM/charts/master/repo/stable/ibm-nodejs-sample-1.0.0.tgz
-    version: 1.0.0
   ibm-object-storage-plugin:
+  - apiVersion: v1
+    appVersion: 1.1.5
+    created: 2020-05-13T21:05:32.736103673Z
+    description: A Helm chart for installing ibmcloud object storage plugin
+    digest: b071e9a3386167e021c4ff89739417309f81ddd17b970bc197adbcb76534dc35
+    keywords:
+    - IKS
+    - ICP
+    - amd64
+    - Storage
+    - Commercial
+    - Limited
+    kubeVersion: '>=1.10.1'
+    maintainers:
+    - email: contsto2@in.ibm.com
+      name: IBM Cloud Object Storage
+    name: ibm-object-storage-plugin
+    tillerVersion: '>=2.9.1'
+    urls:
+    - https://raw.githubusercontent.com/IBM/charts/master/repo/stable/ibm-object-storage-plugin-1.1.5.tgz
+    version: 1.1.5
   - apiVersion: v1
     appVersion: 1.1.4
     created: 2020-03-10T22:57:00.150381995Z
@@ -4200,93 +3956,6 @@ entries:
     urls:
     - https://raw.githubusercontent.com/IBM/charts/master/repo/stable/ibm-powervc-k8s-volume-driver-1.0.0.tgz
     version: 1.0.0
-  ibm-reactive-platform-lagom-sample:
-  - appVersion: 1.0.0
-    created: 2020-03-19T15:05:43.788936526Z
-    deprecated: true
-    description: A Reactive Platform Application sample. - Deprecated
-    digest: 58dd583844165d7f54545e8c469d1324b513b7222769bad88c060743a45b7df1
-    icon: https://raw.githubusercontent.com/IBM/charts/master/logo/lagom-logo.png
-    keywords:
-    - sample
-    - ICP
-    - Reactive
-    - Chirper
-    - OpenSource
-    - amd64
-    - runtime
-    kubeVersion: '>=1.11'
-    name: ibm-reactive-platform-lagom-sample
-    tillerVersion: '>=2.9.1'
-    urls:
-    - https://raw.githubusercontent.com/IBM/charts/master/repo/stable/ibm-reactive-platform-lagom-sample-1.0.3.tgz
-    version: 1.0.3
-  - created: 2018-12-12T00:53:01.606282282Z
-    description: A Reactive Platform Application sample.
-    digest: 95366fc6621b25920ead62001fe7d456c31bba305b905f6e9030e98fd4f53373
-    icon: https://raw.githubusercontent.com/IBM/charts/master/logo/lagom-logo.png
-    keywords:
-    - sample
-    - ICP
-    - Reactive
-    - Chirper
-    - OpenSource
-    - amd64
-    - runtime
-    kubeVersion: '>=1.11'
-    name: ibm-reactive-platform-lagom-sample
-    tillerVersion: '>=2.9.1'
-    urls:
-    - https://raw.githubusercontent.com/IBM/charts/master/repo/stable/ibm-reactive-platform-lagom-sample-1.0.1.tgz
-    version: 1.0.1
-  - created: 2018-10-05T02:22:58.192161475Z
-    description: A Reactive Platform Application sample.
-    digest: 9065f01dc4a5a9ca64ed98be7008e371a2d51e9cb4fbf7c6844424c255362709
-    icon: https://raw.githubusercontent.com/IBM/charts/master/logo/lagom-logo.png
-    keywords:
-    - sample
-    - ICP
-    - Reactive
-    - Chirper
-    - OpenSource
-    - amd64
-    - runtime
-    name: ibm-reactive-platform-lagom-sample
-    tillerVersion: '>=2.9.1'
-    urls:
-    - https://raw.githubusercontent.com/IBM/charts/master/repo/stable/ibm-reactive-platform-lagom-sample-1.0.0.tgz
-    version: 1.0.0
-  ibm-redis:
-  - apiVersion: v1
-    appVersion: redis-3.2.12
-    created: 2020-01-21T17:54:54.416789142Z
-    description: Highly available Redis cluster with multiple sentinels and standbys.
-    digest: 8cfb3d74430bd2c1e15cdff85cb112e97c288286b88613aa88f012fe96c45249
-    engine: gotpl
-    icon: https://images.g2crowd.com/uploads/product/image/large_detail/large_detail_1489695934/redis.jpg
-    keywords:
-    - redis
-    - keyvalue
-    - database
-    - amd64
-    - ppc64le
-    - s390x
-    - ICP
-    - ICPRHOCP
-    - OpenSource
-    - database
-    - Commercial
-    - Limited
-    kubeVersion: '>=1.11'
-    maintainers:
-    - name: IBM Watson
-    name: ibm-redis
-    sources:
-    - https://github.com/IBM/charts/tree/master/stable
-    tillerVersion: '>=2.9.0'
-    urls:
-    - https://raw.githubusercontent.com/IBM/charts/master/repo/stable/ibm-redis-1.4.9.tgz
-    version: 1.4.9
   ibm-rook-rbd-cluster:
   - apiVersion: v1
     appVersion: "1.0"
@@ -4763,6 +4432,32 @@ entries:
     - https://raw.githubusercontent.com/IBM/charts/master/repo/stable/ibm-swift-sample-1.0.0.tgz
     version: 1.0.0
   ibm-transadv-dev:
+  - appVersion: 1.9.10
+    created: 2020-05-26T16:12:33.4416248Z
+    deprecated: true
+    description: IBM Cloud Transformation Advisor - Deprecated
+    digest: e813b4d46f8d70f63f65e40d7fa95ce73802638945ececbfe23c8f23fd96fe30
+    home: https://developer.ibm.com/recipes/tutorials/deploying-transformation-advisor-into-ibm-cloud-private/
+    icon: https://avatars3.githubusercontent.com/u/39458267?s=400&u=0c8db2a54473062c18debc22926cecf4cdda5234&v=4
+    keywords:
+    - Transformation Advisor
+    - amd64
+    - ppc64le
+    - s390x
+    - Limited
+    - ICP
+    - DevOps
+    - Tools
+    kubeVersion: '>= 1.10.0'
+    maintainers:
+    - name: HybridCloud
+    name: ibm-transadv-dev
+    sources:
+    - https://github.com/IBM/charts/tree/master/stable
+    tillerVersion: '>=2.7.2'
+    urls:
+    - https://raw.githubusercontent.com/IBM/charts/master/repo/stable/ibm-transadv-dev-1.9.10.tgz
+    version: 1.9.10
   - appVersion: 1.9.9
     created: 2019-07-26T13:31:16.590102317Z
     description: IBM Cloud Transformation Advisor
@@ -5271,6 +4966,30 @@ entries:
     - https://raw.githubusercontent.com/IBM/charts/master/repo/stable/ibm-transadv-dev-1.0.0.tgz
     version: 1.0.0
   ibm-transadv-rhel-dev:
+  - appVersion: 1.9.10
+    created: 2020-05-26T16:12:33.449209386Z
+    deprecated: true
+    description: IBM Cloud Transformation Advisor - Deprecated
+    digest: f2775e6d5ef7fb900cd9e22e7103c9c35cb628717f6cd9c729d0efb6d3ea26fd
+    home: https://developer.ibm.com/recipes/tutorials/deploying-transformation-advisor-into-ibm-cloud-private/
+    icon: https://avatars3.githubusercontent.com/u/39458267?s=400&u=0c8db2a54473062c18debc22926cecf4cdda5234&v=4
+    keywords:
+    - Transformation Advisor
+    - amd64
+    - Limited
+    - DevOps
+    - Tools
+    - ICPRHOCP
+    kubeVersion: '>= 1.10.0'
+    maintainers:
+    - name: HybridCloud
+    name: ibm-transadv-rhel-dev
+    sources:
+    - https://github.com/IBM/charts/tree/master/stable
+    tillerVersion: '>=2.7.2'
+    urls:
+    - https://raw.githubusercontent.com/IBM/charts/master/repo/stable/ibm-transadv-rhel-dev-1.9.10.tgz
+    version: 1.9.10
   - appVersion: 1.9.9
     created: 2019-07-26T13:31:16.600373193Z
     description: IBM Cloud Transformation Advisor
@@ -6130,4 +5849,4 @@ entries:
     urls:
     - https://raw.githubusercontent.com/IBM/charts/master/repo/stable/ibm-ws-dyn-agent-dev-1.0.0.tgz
     version: 1.0.0
-generated: 2020-04-30T14:42:27.831846465Z
+generated: 2020-06-22T20:12:12.136131866Z

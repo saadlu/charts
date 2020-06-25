@@ -1,6 +1,31 @@
 apiVersion: v1
 entries:
   ibm-ace-dashboard-icp4i-prod:
+  - appVersion: 11.0.0.9-r1
+    created: 2020-06-15T20:49:38.440362928Z
+    description: IBM App Connect Enterprise dashboard
+    digest: 0e071399e73d39a4749db32e0f490440b17895fcfd45b22aa38d9687b098b938
+    icon: https://raw.githubusercontent.com/ot4i/ace-docker/master/app_connect_light_256x256.png
+    keywords:
+    - amd64
+    - ICPRHOCP
+    - ICPROKS
+    - ACE
+    - Integration
+    - IIB
+    - WMB
+    - MQSI
+    - Websphere
+    - Message
+    - Broker
+    - Bus
+    - Commercial
+    kubeVersion: '>=1.11.0'
+    name: ibm-ace-dashboard-icp4i-prod
+    tillerVersion: '>=2.10.0'
+    urls:
+    - https://raw.githubusercontent.com/IBM/charts/master/repo/entitled/ibm-ace-dashboard-icp4i-prod-3.1.3.tgz
+    version: 3.1.3
   - appVersion: 11.0.0.8-r1
     created: 2020-04-01T12:36:44.867979816Z
     description: IBM App Connect Enterprise dashboard
@@ -129,6 +154,32 @@ entries:
     - https://raw.githubusercontent.com/IBM/charts/master/repo/entitled/ibm-ace-dashboard-icp4i-prod-2.1.0.tgz
     version: 2.1.0
   ibm-ace-server-icp4i-prod:
+  - appVersion: 11.0.0.9-r1
+    created: 2020-06-15T20:49:38.464934642Z
+    description: This helm chart is used by the IBM App Connect Dashboard to deploy
+      servers
+    digest: 77a506eb598d27452fc0336d455795c0d49a88268f3e3fc8ffaf460dfd80cfa9
+    icon: https://raw.githubusercontent.com/ot4i/ace-helm/master/integration_server.svg?sanitize=true
+    keywords:
+    - amd64
+    - ICPRHOCP
+    - ICPROKS
+    - ACE
+    - Integration
+    - IIB
+    - WMB
+    - MQSI
+    - Websphere
+    - Message
+    - Broker
+    - Bus
+    - Commercial
+    kubeVersion: '>=1.11.0'
+    name: ibm-ace-server-icp4i-prod
+    tillerVersion: '>=2.10.0'
+    urls:
+    - https://raw.githubusercontent.com/IBM/charts/master/repo/entitled/ibm-ace-server-icp4i-prod-3.1.3.tgz
+    version: 3.1.3
   - appVersion: 11.0.0.8-r1
     created: 2020-04-24T12:34:15.568258907Z
     description: This helm chart is used by the IBM App Connect Dashboard to deploy
@@ -381,6 +432,56 @@ entries:
     - https://raw.githubusercontent.com/IBM/charts/master/repo/entitled/ibm-apm-ema-prod-1.1.0+hotfix.1.tgz
     version: 1.1.0+hotfix.1
   ibm-app-connect-designer-icp4i:
+  - appVersion: 11.0.0.9
+    created: 2020-06-16T16:29:04.299324241Z
+    description: IBM App Connect Designer
+    digest: cb9b2af69c38f4cc1f0bef5709ba1968334980eb05978cece3a5fab3fbd140b6
+    icon: https://raw.githubusercontent.com/ot4i/ace-docker/master/app_connect_light_256x256.png
+    keywords:
+    - Commercial
+    - amd64
+    - ICPRHOCP
+    - ICPROKS
+    - ACE
+    - Integration
+    - IIB
+    - WMB
+    - MQSI
+    - Websphere
+    - Message
+    - Broker
+    - Bus
+    kubeVersion: '>=1.11.0'
+    name: ibm-app-connect-designer-icp4i
+    tillerVersion: '>=2.10.0'
+    urls:
+    - https://raw.githubusercontent.com/IBM/charts/master/repo/entitled/ibm-app-connect-designer-icp4i-3.1.3.tgz
+    version: 3.1.3
+  - appVersion: 11.0.0.8
+    created: 2020-05-14T22:55:12.39380661Z
+    description: IBM App Connect Designer
+    digest: e8cccf32034c205c189bf7df597d062c346514c67e8e7609eb0bf5c24e33a69d
+    icon: https://raw.githubusercontent.com/ot4i/ace-docker/master/app_connect_light_256x256.png
+    keywords:
+    - Commercial
+    - amd64
+    - ICPRHOCP
+    - ICPROKS
+    - ACE
+    - Integration
+    - IIB
+    - WMB
+    - MQSI
+    - Websphere
+    - Message
+    - Broker
+    - Bus
+    kubeVersion: '>=1.11.0'
+    name: ibm-app-connect-designer-icp4i
+    tillerVersion: '>=2.10.0'
+    urls:
+    - https://raw.githubusercontent.com/IBM/charts/master/repo/entitled/ibm-app-connect-designer-icp4i-3.1.2.tgz
+    version: 3.1.2
   - appVersion: 11.0.0.7
     created: 2020-03-31T20:36:07.60680023Z
     description: IBM App Connect Designer
@@ -541,6 +642,26 @@ entries:
     - https://raw.githubusercontent.com/IBM/charts/master/repo/entitled/ibm-aspera-hsts-prod-1.2.2.tgz
     version: 1.2.2
   ibm-cloud-appmgmt-prod:
+  - appVersion: 2020.1.0.1
+    created: 2020-05-22T20:08:17.012984886Z
+    description: Performance Monitoring module for IBM Cloud Pak for Multicloud Management
+    digest: 3a00310702ec5d967a9c961c3e8bda0bbf95319e948a751b93e59e8a6a378f32
+    icon: https://developer.ibm.com/apm/wp-content/uploads/sites/119/2017/10/apm-devops-server.png
+    keywords:
+    - ICP
+    - ICPRHOCP
+    - Commercial
+    - amd64
+    - ppc64le
+    - Operations
+    - DevOps
+    - Monitoring
+    kubeVersion: '>=1.11.0'
+    name: ibm-cloud-appmgmt-prod
+    tillerVersion: '>=2.10.0'
+    urls:
+    - https://raw.githubusercontent.com/IBM/charts/master/repo/entitled/ibm-cloud-appmgmt-prod-1.7.1.tgz
+    version: 1.7.1
   - appVersion: 2020.1.0
     created: 2020-03-27T17:11:16.610038671Z
     description: Performance Monitoring module for IBM Cloud Pak for Multicloud Management
@@ -681,6 +802,24 @@ entries:
     urls:
     - https://raw.githubusercontent.com/IBM/charts/master/repo/entitled/ibm-datapower-icp4i-1.0.4.tgz
     version: 1.0.4
+  ibm-eam-prod:
+  - appVersion: "1.1"
+    created: 2020-06-08T20:33:46.142082323Z
+    description: IBM Edge Application Manager
+    digest: 779c2862f36546a23c7bde5344964c413623a2391ec827189f47a5a130f8bdfd
+    icon: http://raw.githubusercontent.com/IBM/charts/master/logo/icp-logo-box.svg
+    keywords:
+    - amd64
+    - ICPRHOCP
+    - Tools
+    - Framework
+    - Commercial
+    kubeVersion: '>=1.14'
+    name: ibm-eam-prod
+    tillerVersion: '>=2.9.1'
+    urls:
+    - https://raw.githubusercontent.com/IBM/charts/master/repo/entitled/ibm-eam-prod-4.1.0.tgz
+    version: 4.1.0
   ibm-eventstreams-icp4i-prod:
   - appVersion: 2019.4.2
     created: 2020-03-30T21:48:13.111250157Z
@@ -1506,6 +1645,24 @@ entries:
     - https://raw.githubusercontent.com/IBM/charts/master/repo/entitled/ibm-mss-prod-1.0.0.tgz
     version: 1.0.0
   ibm-security-foundations-prod:
+  - appVersion: 1.3.0.0
+    created: 2020-05-26T17:00:35.866029485Z
+    description: IBM Cloud Pak for Security - Shared Operators & Infrastructural Services
+    digest: a99582892850d4d0fe5b00b91a30ad033b0c6d6ea3be770730cde0a91cab8005
+    icon: http://raw.githubusercontent.com/IBM/charts/master/logo/IBM-Security-icon.png
+    keywords:
+    - amd64
+    - Commercial
+    - Security
+    - Operators
+    - Middleware
+    - ICPRHOCP
+    kubeVersion: '>=1.11.0'
+    name: ibm-security-foundations-prod
+    tillerVersion: '>=2.10'
+    urls:
+    - https://raw.githubusercontent.com/IBM/charts/master/repo/entitled/ibm-security-foundations-prod-1.0.6.tgz
+    version: 1.0.6
   - appVersion: 1.2.0.0
     created: 2020-03-25T21:06:38.567587192Z
     description: IBM Cloud Pak for Security - Shared Operators & Infrastructural Services
@@ -1615,6 +1772,29 @@ entries:
     - https://raw.githubusercontent.com/IBM/charts/master/repo/entitled/ibm-security-foundations-prod-1.0.0.tgz
     version: 1.0.0
   ibm-security-solutions-prod:
+  - appVersion: 1.3.0.0
+    created: 2020-05-26T17:00:35.906843721Z
+    description: IBM Cloud Pak For Security Shared Platform Services
+    digest: 22db88427765a1441652f797f4579165ea35e6eecde0bafa0fb634156df70f9a
+    icon: http://raw.githubusercontent.com/IBM/charts/master/logo/IBM-Security-icon.png
+    keywords:
+    - Resilient
+    - Cases
+    - Data Explorer
+    - Threat Intelligence Insights
+    - Unified Data Service
+    - Car
+    - Analytics Toolkit
+    - amd64
+    - Commercial
+    - Security
+    - ICPRHOCP
+    kubeVersion: '>=1.11.0'
+    name: ibm-security-solutions-prod
+    tillerVersion: '>=2.12.3'
+    urls:
+    - https://raw.githubusercontent.com/IBM/charts/master/repo/entitled/ibm-security-solutions-prod-1.0.6.tgz
+    version: 1.0.6
   - appVersion: 1.2.0.0
     created: 2020-03-25T20:42:45.39320473Z
     description: IBM Cloud Pak For Security Shared Platform Services
@@ -1728,6 +1908,25 @@ entries:
     tillerVersion: '>=2.12.3'
     urls:
     - https://raw.githubusercontent.com/IBM/charts/master/repo/entitled/ibm-security-solutions-prod-1.0.0.tgz
+    version: 1.0.0
+  ibm-spectrum-protect-plus-prod:
+  - apiVersion: v1
+    appVersion: 10.1.6
+    created: 2020-06-12T20:53:20.776453349Z
+    description: IBM Spectrum Protect Plus Kubernetes Backup Support
+    digest: 800b9a897e05c98c7fbc65f4e4bf2759f5cba34ece4fa29f9c1a0e965ef4fb78
+    icon: https://www.ibm.com/cloud-computing/scalable-icon.svg
+    keywords:
+    - Commercial
+    - Storage
+    - Operations
+    - amd64
+    - RHOCP
+    kubeVersion: '>=1.16.0'
+    name: ibm-spectrum-protect-plus-prod
+    tillerVersion: '>=2.16.0'
+    urls:
+    - https://raw.githubusercontent.com/IBM/charts/master/repo/entitled/ibm-spectrum-protect-plus-prod-1.0.0.tgz
     version: 1.0.0
   ibm-ucd-prod:
   - apiVersion: v1
@@ -2133,4 +2332,4 @@ entries:
     urls:
     - https://raw.githubusercontent.com/IBM/charts/master/repo/entitled/ibm-wml-accelerator-prod-1.0.0.tgz
     version: 1.0.0
-generated: 2020-04-30T14:39:43.961998681Z
+generated: 2020-06-22T20:04:38.99171599Z
